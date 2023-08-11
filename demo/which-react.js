@@ -1,9 +1,6 @@
-// import React, { useReducer } from "react";
-// import ReactDOM from "react-dom";
 
-// import { useReducer } from "../src/react";
-import ReactDOM from "./src/react-dom";
-import { Component } from "./src/react";
+import ReactDOM from "../src/react-dom";
+import { Component, useReducer, useState, useEffect, useLayoutEffect } from "../src/react";
 
 
-export { ReactDOM, Component };
+export { ReactDOM, Component, useReducer, useState, useEffect, useLayoutEffect };

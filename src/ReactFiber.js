@@ -13,9 +13,10 @@ export default function createFiber(vnode, returnFiber) {
         // 标记节点是什么类型的
         flags: Placement,
         // 老节点
-        alternate: null,
+        alternate: null,//order fiber
         deletions: null, // 要删除子节点 null或者[]
         index: null, //当前层级下的下标，从0开始
+        memorizedState: null, //函数组件存的是hook0，类组件自身的状态值
     };
 
     const { type } = vnode
